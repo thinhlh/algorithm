@@ -1,3 +1,6 @@
+# Right Solution
+
+
 # There are 3 cases
 # First we need to split into [negatives number list] and [positive number list]
 # [0,0,0] Only exist if number of zeros >=3 | Add to result once if numbers of zero >=3

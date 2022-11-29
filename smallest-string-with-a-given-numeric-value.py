@@ -1,3 +1,6 @@
+# Right Solution
+
+
 class Solution:
     def get_value_from_char(self, char: str) -> int:
         return ord(char) - 96

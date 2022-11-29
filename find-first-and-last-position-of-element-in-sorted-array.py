@@ -1,3 +1,6 @@
+# Right Solution
+
+
 class Solution:
 
     def binary_search(self, nums, target, left, right, find_max_left) -> int:
