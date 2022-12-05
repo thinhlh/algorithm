@@ -63,11 +63,9 @@ def getHeight(root: Node):
     if not root:
         return 0
     else:
-        max_left, max_right = 0, 0
-        # Only start adding if have left node
-        max_left += 0 if not root.left else 1 + getHeight(root.left)
-        max_right += 0 if not root.right else 1 + \
-            getHeight(root.right)  # Only start adding if have right node
+        max_left, max_right = 0, 0 
+        max_left += 0 if not root.left else 1 + getHeight(root.left) # Only start adding if have left node
+        max_right += 0 if not root.right else 1 + getHeight(root.right) # Only start adding if have right node
         return max(max_left, max_right)
 
 

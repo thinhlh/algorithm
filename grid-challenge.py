@@ -1,3 +1,5 @@
+# Solved
+
 def gridChallenge(grid: list[str]):
     # Write your code here
     for i in range(len(grid)):

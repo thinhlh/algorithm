@@ -1,3 +1,4 @@
+# Right Solution
 class Solution:
     def countBinarySubstrings(self, s: str) -> int:
         res = 0
@@ -10,7 +11,7 @@ class Solution:
                     i += 1
                     zero += 1
 
-                # Store the
+                # Store the current idx of 0, so that we can use it to traverse next
                 j = i
                 while (j < len(s) and s[j] == '1'):
                     j += 1
@@ -19,6 +20,7 @@ class Solution:
                 while (i < len(s) and s[i] == '1'):
                     i += 1
                     one += 1
+                # Store the current idx of 1, so that we can use it to traverse next
                 j = i
                 while (j < len(s) and s[j] == '0'):
                     j += 1
